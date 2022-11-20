@@ -904,21 +904,53 @@ header .head-three .login-form button:hover {
   html {
     font-size: 50%;
   }
+  header {
+    padding: 0;
+  }
+  header #menu-btn {
+    display: inline-block;
+  }
+  header .logo {
+    font-size: 20px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  header .logo span {
+    margin-top: 1.5rem;
+    margin-left: 10px;
+  }
   header nav {
-    color: #666 !important;
     left: -13%;
+    color: #666 !important;
   }
   header .head-three {
-    margin-left: 15rem;
+    margin-left: 10rem;
   }
   header .head-three .login-form {
     margin: 4px 0 0 0;
     padding: 1rem 2rem;
     width: 60vh;
-    right: -150%;
+    right: -15%;
   }
   header .head-three .login-form.active {
-    right: 5rem;
+    right: 20rem;
+  }
+  header .head-three .search-form {
+    right: -10%;
+  }
+  header .head-three .search-form.active {
+    right: 15rem;
+    -webkit-transition: .5s linear;
+    transition: .5s linear;
+  }
+  header .head-three .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    text-transform: none;
+    color: #a3a0ca;
+    padding: 0 1.2rem;
   }
   .banner-container {
     margin: 0 !important;

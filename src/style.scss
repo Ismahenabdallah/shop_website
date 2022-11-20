@@ -916,14 +916,33 @@ header {
         font-size: 50%;
     }
     header {
+        padding: 0;       
+       
     
-        nav{
-            color: $light-color !important;
-            left:-13%;
+        #menu-btn{
+            display: inline-block;
         }
+    
+        .logo {
+            font-size: 20px;
+       display: flex !important;
+
+     span{
+        margin-top: 1.5rem;
+        margin-left: 10px;
+     }
+        }
+    
+        nav {
+          
+      
+        left:-13%; 
+        color: $light-color !important;
+     
+        }
+    
         .head-three {
-            margin-left: 15rem;
-           
+            margin-left: 10rem;
             .login-form {
        
                 margin: 4px 0 0 0;
@@ -933,10 +952,10 @@ header {
                
                
               
-                right: -150%;
+                right: -15%;
         
                 &.active {
-                    right: 5rem;
+                    right: 20rem;
                    
         
         
@@ -950,11 +969,35 @@ header {
         
         
             }
-           
+            .search-form {
     
-            
-        }
+                right: -10%;
+    
+    
+    
+                &.active {
+                    right: 15rem;
+                    transition: .5s linear;
+    
+    
+    
+                }
+    
+                input {
+                    height: 100%;
+                    width: 100%;
+                    font-size: 1.6rem;
+                    text-transform: none;
+                    color: $black;
+                    padding: 0 1.2rem;
+                }
+    
+               
+    
+            }
+    
     }
+ }
     
 
     .banner-container {
@@ -1004,5 +1047,4 @@ header {
         }
        
     }
-
 }
