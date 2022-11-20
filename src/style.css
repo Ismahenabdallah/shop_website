@@ -852,6 +852,7 @@ header .head-three .login-form button:hover {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     display: block;
+    color: #666 !important;
     padding: 2rem;
   }
   header nav.active {
@@ -861,6 +862,7 @@ header .head-three .login-form button:hover {
   header nav a {
     font-size: 2rem;
     display: block;
+    color: #666 !important;
     padding: .5rem;
   }
   header .head-three {
@@ -892,7 +894,7 @@ header .head-three .login-form button:hover {
 }
 
 @media (max-width: 768px) {
-  header .banner-container .banner .content {
+  .banner-container .banner .content {
     -webkit-transform: translateX(10%) !important;
             transform: translateX(10%) !important;
   }
@@ -901,6 +903,10 @@ header .head-three .login-form button:hover {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  header nav {
+    color: #666 !important;
+    left: -13%;
   }
   header .head-three {
     margin-left: 15rem;

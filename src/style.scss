@@ -798,11 +798,11 @@ header {
         top:50%; left:-20%; right:0;
         text-align: left;
 
-        background:#fff;
+       background:#fff;
         border-bottom: $border;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         display: block;
-       
+        color: $light-color !important;
       padding: 2rem;
         &.active{
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -811,7 +811,7 @@ header {
         a{
             font-size: 2rem;
             display: block;
-         
+          color: $light-color !important;
             padding: .5rem;
             
             
@@ -883,7 +883,7 @@ header {
     }
 }
 @media (max-width:768px){
-    header {
+   
     
        
           
@@ -908,7 +908,7 @@ header {
                 } 
 
         }
-    }
+   
 }
 @media (max-width:450px){
 
@@ -917,6 +917,10 @@ header {
     }
     header {
     
+        nav{
+            color: $light-color !important;
+            left:-13%;
+        }
         .head-three {
             margin-left: 15rem;
            
